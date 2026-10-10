@@ -1,0 +1,67 @@
+.class public final synthetic Lcom/google/android/gms/internal/ads/zzgfe;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/ads/zzglz;
+
+
+# virtual methods
+.method public final a(Lcom/google/android/gms/internal/ads/zzgek;Ljava/lang/Integer;)Lcom/google/android/gms/internal/ads/zzgdx;
+    .locals 2
+
+    check-cast p1, Lcom/google/android/gms/internal/ads/zzgfk;
+
+    sget-object v0, Lcom/google/android/gms/internal/ads/zzgff;->a:Lcom/google/android/gms/internal/ads/zzgmx;
+
+    iget v0, p1, Lcom/google/android/gms/internal/ads/zzgfk;->a:I
+
+    const/16 v1, 0x10
+
+    if-eq v0, v1, :cond_1
+
+    const/16 v1, 0x20
+
+    if-ne v0, v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    new-instance p1, Ljava/security/GeneralSecurityException;
+
+    const-string p2, "AES key size must be 16 or 32 bytes"
+
+    invoke-direct {p1, p2}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_1
+    :goto_0
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzgez;
+
+    invoke-direct {v1}, Lcom/google/android/gms/internal/ads/zzgez;-><init>()V
+
+    iput-object p1, v1, Lcom/google/android/gms/internal/ads/zzgez;->a:Lcom/google/android/gms/internal/ads/zzgfk;
+
+    iput-object p2, v1, Lcom/google/android/gms/internal/ads/zzgez;->d:Ljava/lang/Integer;
+
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/zzgvp;->b(I)Lcom/google/android/gms/internal/ads/zzgvp;
+
+    move-result-object p2
+
+    iput-object p2, v1, Lcom/google/android/gms/internal/ads/zzgez;->b:Lcom/google/android/gms/internal/ads/zzgvp;
+
+    iget p1, p1, Lcom/google/android/gms/internal/ads/zzgfk;->b:I
+
+    invoke-static {p1}, Lcom/google/android/gms/internal/ads/zzgvp;->b(I)Lcom/google/android/gms/internal/ads/zzgvp;
+
+    move-result-object p1
+
+    iput-object p1, v1, Lcom/google/android/gms/internal/ads/zzgez;->c:Lcom/google/android/gms/internal/ads/zzgvp;
+
+    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/zzgez;->a()Lcom/google/android/gms/internal/ads/zzgfb;
+
+    move-result-object p1
+
+    return-object p1
+.end method

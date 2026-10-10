@@ -1,0 +1,37 @@
+.class public abstract Lcom/google/android/gms/internal/ads/zzbes;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final a:Lcom/google/android/gms/internal/ads/zzbdv;
+
+.field public static final b:Lcom/google/android/gms/internal/ads/zzbdv;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    const-string v0, "gads:separate_url_generation:enabled"
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Lcom/google/android/gms/internal/ads/zzbdv;->b(Ljava/lang/String;Z)Lcom/google/android/gms/internal/ads/zzbdv;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/ads/zzbes;->a:Lcom/google/android/gms/internal/ads/zzbdv;
+
+    const-string v0, "gads:url_cache:max_size"
+
+    const-wide/16 v1, 0xc8
+
+    invoke-static {v0, v1, v2}, Lcom/google/android/gms/internal/ads/zzbdv;->a(Ljava/lang/String;J)Lcom/google/android/gms/internal/ads/zzbdv;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/ads/zzbes;->b:Lcom/google/android/gms/internal/ads/zzbdv;
+
+    return-void
+.end method

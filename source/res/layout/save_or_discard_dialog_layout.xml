@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dialog_bg" android:padding="@dimen/_8sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_12sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivClose" android:layout_width="@dimen/_22sdp" android:layout_height="@dimen/_22sdp" android:src="@drawable/ic_close_dialog" android:contentDescription="@string/app_name" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="@dimen/_16ssp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_6sdp" android:text="@string/save" android:singleLine="true" android:fontFamily="@font/inter_medium" android:layout_marginHorizontal="@dimen/_6sdp" />
+    <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:gravity="center" android:id="@id/tvSubTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_6sdp" android:text="@string/do_you_want_to_save_the_current_script" android:layout_below="@id/tvTitle" android:fontFamily="@font/inter_regular" android:layout_marginHorizontal="@dimen/_6sdp" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_6sdp" android:layout_below="@id/tvSubTitle">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btnSave" android:background="@drawable/selector_done_btn" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp" android:layout_marginVertical="@dimen/_6sdp">
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save" android:fontFamily="@font/inter_regular" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btnDiscard" android:background="@drawable/selector_cancel_btn" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/_35sdp" android:layout_marginVertical="@dimen/_6sdp">
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/white_25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discard" android:fontFamily="@font/inter_regular" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

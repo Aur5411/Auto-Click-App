@@ -1,0 +1,10 @@
+﻿# apktool 编译缓存
+build/
+
+# 签名临时文件
+*.idsig
+*.keystore
+
+# 系统文件
+Thumbs.db
+.DS_Store

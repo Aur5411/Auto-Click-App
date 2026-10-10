@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardCornerRadius="15.0dip" app:cardElevation="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/root_multiple_view" android:background="@drawable/bg_overlay_action" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="@dimen/_40sdp" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/bt_play" android:src="@drawable/ic_icon_general_play" style="@style/OverlayButtonHelp" />
+        <View android:id="@id/line1" android:background="@color/white_20" android:layout_width="fill_parent" android:layout_height="@dimen/_1sdp" />
+        <androidx.appcompat.widget.AppCompatImageView android:visibility="gone" android:src="@drawable/ic_icon_record" app:tint="@color/white" style="@style/OverlayButtonHelp" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/bt_add" android:src="@drawable/ic_icon_general_add" app:tint="@color/white" style="@style/OverlayButtonHelp" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/bt_add_swipe" android:src="@drawable/ic_icon_clicker_swipe" app:tint="@color/white" style="@style/OverlayButtonHelp" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/bt_remove" android:src="@drawable/ic_icon_general_minus" app:tint="@color/white" style="@style/OverlayButtonHelp" />
+        <View android:background="@color/white_20" android:layout_width="fill_parent" android:layout_height="@dimen/_1sdp" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgSaveScript" android:src="@drawable/ic_icon_general_save" app:tint="@color/white" style="@style/OverlayButtonHelp" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/bt_setting" android:src="@drawable/ic_icon_general_settings" app:tint="@color/white" style="@style/OverlayButtonHelp" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/bt_hide" android:src="@drawable/ic_icon_eye_show" app:tint="@color/white" style="@style/OverlayButtonHelp" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/bt_close" android:src="@drawable/ic_icon_general_x" app:tint="@color/white" style="@style/OverlayButtonHelp" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgUpHideView" android:padding="@dimen/_2sdp" android:src="@drawable/ic_icon_up" app:tint="@color/white" style="@style/OverlayButtonHelp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.cardview.widget.CardView android:id="@id/root_single_view_two" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_alignParentEnd="true" app:cardBackgroundColor="@color/click_controller_bg_color" app:cardCornerRadius="@dimen/_10sdp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_running_status_bar" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/_8sdp">
+                <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00 : 00 : 00" />
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="8.0dip">
+                        <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_icon_cycle" />
+                        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/tv_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:layout_marginStart="4.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_icon_action_count" />
+                        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@id/tv_loop_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0/1" android:singleLine="true" android:layout_marginStart="4.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ff585e8e" android:layout_width="@dimen/_1sdp" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_4sdp" android:layout_marginHorizontal="@dimen/_4sdp">
+                <ImageView android:id="@id/iv_stop" android:padding="@dimen/_4sdp" android:visibility="visible" android:layout_width="@dimen/_26sdp" android:layout_height="@dimen/_26sdp" android:src="@drawable/ic_icon_stop_inactive" />
+                <ImageView android:id="@id/iv_play_pause" android:padding="@dimen/_4sdp" android:layout_width="@dimen/_26sdp" android:layout_height="@dimen/_26sdp" android:src="@drawable/ic_play" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

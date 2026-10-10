@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:background="@color/all_screen_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/customToolbar" layout="@layout/custom_tool_bar_layout" />
+    <androidx.core.widget.NestedScrollView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/btnDoneSaveScript" android:layout_below="@id/customToolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/customToolbar">
+            <androidx.cardview.widget.CardView android:id="@id/rlAccessPointContainer" android:background="@color/all_card_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" app:cardBackgroundColor="@color/all_card_bg_color" app:cardCornerRadius="@dimen/_20sdp">
+                <RelativeLayout android:padding="@dimen/_8sdp" android:clipChildren="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/_16ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_point" android:layout_alignTop="@id/ivPointGreenOne" android:fontFamily="@font/inter_semi_bold" android:layout_marginStart="@dimen/_12sdp" />
+                    <ImageView android:id="@id/ivPointGreenOne" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:src="@drawable/ic_green_point" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/_20sdp" android:layout_alignParentEnd="true" />
+                    <SeekBar android:id="@id/skControlPointSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:max="100" android:progress="50" android:progressDrawable="@drawable/seekbar_progress_drawable" android:minHeight="@dimen/_30sdp" android:thumb="@drawable/seekbar_thumb" android:thumbOffset="0.0dip" android:layout_below="@id/ivPointGreenOne" android:paddingStart="@dimen/_12sdp" android:paddingEnd="@dimen/_12sdp" android:splitTrack="false" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:background="@color/all_card_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" app:cardCornerRadius="@dimen/_20sdp">
+                <LinearLayout android:orientation="vertical" android:background="@color/all_card_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/_15ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/theme" android:fontFamily="@font/inter_medium" android:layout_marginStart="18.0dip" />
+                            <ImageView android:id="@id/pointcolor" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/ic_green_point" android:layout_marginStart="@dimen/_60sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerColors" android:padding="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:overScrollMode="never" />
+                    <TextView android:textSize="17.0sp" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:text="@string/transparency" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/_10sdp" />
+                    <SeekBar android:id="@id/sb_point_transparency1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:layout_marginTop="@dimen/_10sdp" android:max="100" android:progress="50" android:progressDrawable="@drawable/seekbar_progress_drawable" android:minHeight="@dimen/_30sdp" android:thumb="@drawable/seekbar_thumb" android:thumbOffset="0.0dip" android:paddingStart="@dimen/_12sdp" android:paddingEnd="@dimen/_12sdp" android:splitTrack="false" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:background="@color/all_card_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:layout_below="@id/rlAccessPointContainer" app:cardBackgroundColor="@color/all_card_bg_color" app:cardCornerRadius="@dimen/_20sdp">
+                <RelativeLayout android:id="@id/rlAccessPointToolContainer" android:padding="@dimen/_8sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rlAccessPointContainer" android:layout_marginHorizontal="@dimen/_12sdp">
+                    <RelativeLayout android:id="@id/rlSecondContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:paddingHorizontal="@dimen/_12sdp">
+                        <TextView android:textSize="@dimen/_16ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_point" android:layout_centerVertical="true" android:fontFamily="@font/inter_semi_bold" />
+                    </RelativeLayout>
+                    <SeekBar android:id="@id/skControlToolSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:max="100" android:progress="50" android:progressDrawable="@drawable/seekbar_progress_drawable" android:minHeight="@dimen/_30sdp" android:thumb="@drawable/seekbar_thumb" android:thumbOffset="0.0dip" android:layout_below="@id/rlSecondContainer" android:paddingStart="@dimen/_12sdp" android:paddingEnd="@dimen/_12sdp" android:splitTrack="false" />
+                    <RelativeLayout android:id="@id/rlActionPointContainer" android:layout_width="fill_parent" android:layout_height="@dimen/_210sdp" android:layout_below="@id/skControlToolSize">
+                        <RelativeLayout android:id="@id/llToolkit" android:background="@drawable/rounded_top_bottom_shape" android:padding="@dimen/_10sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:layout_marginBottom="@dimen/_12sdp" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/_10sdp">
+                            <ImageView android:id="@id/ivPlayStop" android:layout_width="@dimen/_22sdp" android:layout_height="@dimen/_22sdp" android:layout_marginTop="@dimen/_8sdp" android:src="@drawable/ic_play" />
+                            <ImageView android:id="@id/ivSaveLoadScript" android:layout_width="@dimen/_22sdp" android:layout_height="@dimen/_22sdp" android:layout_marginTop="@dimen/_12sdp" android:src="@drawable/ic_save_script" android:layout_below="@id/ivPlayStop" />
+                            <ImageView android:id="@id/ivEditScriptSetting" android:layout_width="@dimen/_22sdp" android:layout_height="@dimen/_22sdp" android:layout_marginTop="@dimen/_12sdp" android:src="@drawable/ic_setting_icon" android:layout_below="@id/ivSaveLoadScript" />
+                            <ImageView android:layout_width="@dimen/_22sdp" android:layout_height="@dimen/_22sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginBottom="@dimen/_8sdp" android:src="@drawable/ic_close_icon_v2" android:layout_below="@id/ivEditScriptSetting" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/btnDoneSaveScript" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:layout_marginBottom="@dimen/_12sdp" android:weightSum="1.0" android:layout_alignParentBottom="true" android:layout_marginHorizontal="@dimen/_12sdp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btnDone" android:background="@drawable/selector_done_btn" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="@dimen/_35sdp" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done" android:fontFamily="@font/inter_regular" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

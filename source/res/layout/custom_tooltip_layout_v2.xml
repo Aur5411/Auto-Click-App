@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_anti_detection_2" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/_11ssp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/customTooltipText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/this_change_wont_impact_existing_scripts_it_will_only_apply_to_scripts_created_from_now_on" android:includeFontPadding="false" android:fontFamily="@font/inter_regular" android:paddingHorizontal="@dimen/_10sdp" />
+</FrameLayout>

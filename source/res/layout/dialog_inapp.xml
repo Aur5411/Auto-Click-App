@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="#fffcfaf8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_close" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp" android:layout_marginTop="20.0dip" android:src="@drawable/ic_close" android:layout_marginStart="12.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/_200sdp" android:layout_height="@dimen/_200sdp" android:src="@drawable/ic_app_purchase" />
+            <TextView android:textSize="@dimen/_20sdp" android:textStyle="bold" android:textColor="@color/gntBlack" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/remove_ads" />
+            <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/gntGray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/remove_all_annoying_ads_forever_by_just" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="@dimen/_25sdp" android:textStyle="bold" android:textColor="#fff44336" android:layout_gravity="center" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0 $" />
+                <View android:id="@id/view_split" android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="50.0dip" android:layout_margin="10.0dip" />
+                <TextView android:textSize="@dimen/_20sdp" android:textColor="#fff44336" android:layout_gravity="center" android:id="@id/tv_old_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0 $" android:alpha="0.7" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_20sdp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_purchase" android:background="@drawable/bg_purchase" android:layout_width="@dimen/_150sdp" android:layout_height="@dimen/_45sdp" android:layout_marginTop="30.0dip" android:text="@string/buy_now" android:textAllCaps="true" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

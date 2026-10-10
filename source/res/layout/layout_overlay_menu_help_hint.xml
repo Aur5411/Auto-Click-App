@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/bg_overlay_action" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_5" android:layout_width="@dimen/_40sdp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:src="@drawable/ic_icon_general_play" style="@style/OverlayButtonHelp" />
+    <View android:background="@color/white_20" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+    <androidx.appcompat.widget.AppCompatImageView android:src="@drawable/ic_icon_general_add" app:tint="@color/white" style="@style/OverlayButtonHelp" />
+    <View android:background="@color/white_20" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+    <androidx.appcompat.widget.AppCompatImageView android:src="@drawable/ic_icon_clicker_swipe" app:tint="@color/white" style="@style/OverlayButtonHelp" />
+    <View android:background="@color/white_20" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+    <androidx.appcompat.widget.AppCompatImageView android:src="@drawable/ic_icon_general_minus" app:tint="@color/white" style="@style/OverlayButtonHelp" />
+    <View android:id="@id/line2" android:background="@color/white_20" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+    <androidx.appcompat.widget.AppCompatImageView android:src="@drawable/ic_icon_general_save" style="@style/OverlayButtonHelp" />
+    <androidx.appcompat.widget.AppCompatImageView android:src="@drawable/ic_icon_general_settings" style="@style/OverlayButtonHelp" />
+    <androidx.appcompat.widget.AppCompatImageView android:src="@drawable/ic_icon_eye_show" style="@style/OverlayButtonHelp" />
+    <androidx.appcompat.widget.AppCompatImageView android:src="@drawable/ic_icon_general_x" style="@style/OverlayButtonHelp" />
+    <androidx.appcompat.widget.AppCompatImageView android:padding="@dimen/_4sdp" android:src="@drawable/ic_icon_up" style="@style/OverlayButtonHelp" />
+</androidx.appcompat.widget.LinearLayoutCompat>

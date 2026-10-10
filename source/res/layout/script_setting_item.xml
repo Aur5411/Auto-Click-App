@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/_2sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:gravity="center" android:id="@id/etTimeTitle" android:background="@drawable/rounded_top_bottom_shape_3" android:layout_width="@dimen/_22sdp" android:layout_height="@dimen/_22sdp" android:text="1" android:fontFamily="@font/inter_regular" />
+</RelativeLayout>

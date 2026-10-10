@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/all_screen_bg_color" android:layout_width="fill_parent" android:layout_height="@dimen/_45sdp" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/ivSettingOrBack" android:padding="@dimen/_4sdp" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/ic_setting" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_6sdp" />
+        <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@id/tvHeading" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/smart_tap_auto_clicker" android:scrollHorizontally="true" android:singleLine="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" android:textAllCaps="false" android:fontFamily="@font/inter_bold" android:layout_toStartOf="@id/ivKey" android:layout_toEndOf="@id/ivSettingOrBack" />
+        <ImageView android:id="@id/ivKey" android:padding="@dimen/_4sdp" android:visibility="invisible" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/ic_key" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_6sdp" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/ivSkip" android:padding="@dimen/_4sdp" android:visibility="invisible" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/ic_done_light_gray" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_6sdp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

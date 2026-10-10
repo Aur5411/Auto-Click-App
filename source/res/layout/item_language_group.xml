@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rlMainLanguage" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/_16sdp" android:layout_height="fill_parent" android:layout_marginStart="@dimen/_10sdp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <View android:background="@color/white_60" android:layout_width="@dimen/_2sdp" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <View android:background="@color/white_60" android:layout_width="fill_parent" android:layout_height="@dimen/_2sdp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llBottomViewLine" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <View android:background="@color/white_60" android:layout_width="@dimen/_2sdp" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_card_dark_charcoal_blue" android:padding="@dimen/_8sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_6sdp" android:layout_marginBottom="2.0dip">
+        <ImageView android:gravity="center" android:id="@id/imgLanguageIcon" android:layout_width="@dimen/_36sdp" android:layout_height="@dimen/_36sdp" android:src="@drawable/ic_flag_en_us" />
+        <TextView android:textSize="@dimen/_13ssp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tvLanguageName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" android:fontFamily="@font/inter_regular" android:textDirection="locale" android:layout_marginHorizontal="@dimen/_10sdp" />
+        <RadioButton android:id="@id/rbEnglish" android:background="@drawable/custom_radio_btn" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:checked="false" android:button="@null" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_3sdp" android:layout_alignParentEnd="true" />
+    </LinearLayout>
+</LinearLayout>

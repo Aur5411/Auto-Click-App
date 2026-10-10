@@ -1,0 +1,109 @@
+.class Landroidx/work/impl/utils/CancelWorkRunnable$3;
+.super Landroidx/work/impl/utils/CancelWorkRunnable;
+.source "SourceFile"
+
+
+# instance fields
+.field public final synthetic c:Landroidx/work/impl/WorkManagerImpl;
+
+.field public final synthetic d:Ljava/lang/String;
+
+.field public final synthetic f:Z
+
+
+# direct methods
+.method public constructor <init>(Landroidx/work/impl/WorkManagerImpl;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/work/impl/utils/CancelWorkRunnable$3;->c:Landroidx/work/impl/WorkManagerImpl;
+
+    const/4 p1, 0x0
+
+    iput-object p1, p0, Landroidx/work/impl/utils/CancelWorkRunnable$3;->d:Ljava/lang/String;
+
+    const/4 p1, 0x0
+
+    iput-boolean p1, p0, Landroidx/work/impl/utils/CancelWorkRunnable$3;->f:Z
+
+    invoke-direct {p0}, Landroidx/work/impl/utils/CancelWorkRunnable;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final d()V
+    .locals 4
+
+    iget-object v0, p0, Landroidx/work/impl/utils/CancelWorkRunnable$3;->c:Landroidx/work/impl/WorkManagerImpl;
+
+    iget-object v1, v0, Landroidx/work/impl/WorkManagerImpl;->c:Landroidx/work/impl/WorkDatabase;
+
+    invoke-virtual {v1}, Landroidx/room/RoomDatabase;->c()V
+
+    :try_start_0
+    invoke-virtual {v1}, Landroidx/work/impl/WorkDatabase;->n()Landroidx/work/impl/model/WorkSpecDao;
+
+    move-result-object v2
+
+    iget-object v3, p0, Landroidx/work/impl/utils/CancelWorkRunnable$3;->d:Ljava/lang/String;
+
+    check-cast v2, Landroidx/work/impl/model/WorkSpecDao_Impl;
+
+    invoke-virtual {v2, v3}, Landroidx/work/impl/model/WorkSpecDao_Impl;->f(Ljava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-static {v0, v3}, Landroidx/work/impl/utils/CancelWorkRunnable;->a(Landroidx/work/impl/WorkManagerImpl;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    goto :goto_1
+
+    :cond_0
+    invoke-virtual {v1}, Landroidx/room/RoomDatabase;->h()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-virtual {v1}, Landroidx/room/RoomDatabase;->f()V
+
+    iget-boolean v1, p0, Landroidx/work/impl/utils/CancelWorkRunnable$3;->f:Z
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, v0, Landroidx/work/impl/WorkManagerImpl;->b:Landroidx/work/Configuration;
+
+    iget-object v2, v0, Landroidx/work/impl/WorkManagerImpl;->c:Landroidx/work/impl/WorkDatabase;
+
+    iget-object v0, v0, Landroidx/work/impl/WorkManagerImpl;->e:Ljava/util/List;
+
+    invoke-static {v1, v2, v0}, Landroidx/work/impl/Schedulers;->a(Landroidx/work/Configuration;Landroidx/work/impl/WorkDatabase;Ljava/util/List;)V
+
+    :cond_1
+    return-void
+
+    :goto_1
+    invoke-virtual {v1}, Landroidx/room/RoomDatabase;->f()V
+
+    throw v0
+.end method

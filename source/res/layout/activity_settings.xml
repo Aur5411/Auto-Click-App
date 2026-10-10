@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:background="@color/all_screen_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/customToolbar" layout="@layout/custom_tool_bar_layout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/tools" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_below="@id/customToolbar" android:layout_marginHorizontal="@dimen/_10sdp">
+        <androidx.cardview.widget.CardView android:id="@id/main_shooting" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/_2sdp" android:layout_marginEnd="@dimen/_7sdp" android:layout_marginVertical="@dimen/_2sdp" app:cardBackgroundColor="@color/all_card_bg_color" app:cardCornerRadius="@dimen/_10sdp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_50sdp" android:src="@drawable/ic_shooting_main" />
+                <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:text="@string/shooting" android:fontFamily="@font/inter_semi_bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:id="@id/main_CPS" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/_5sdp" android:layout_marginVertical="@dimen/_2sdp" app:cardBackgroundColor="@color/all_card_bg_color" app:cardCornerRadius="@dimen/_10sdp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_50sdp" android:src="@drawable/ic_cps_main" />
+                <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:text="@string/cps_test" android:maxLines="1" android:fontFamily="@font/inter_semi_bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:id="@id/main_counter" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/_7sdp" android:layout_marginEnd="@dimen/_2sdp" android:layout_marginVertical="@dimen/_2sdp" app:cardBackgroundColor="@color/all_card_bg_color" app:cardCornerRadius="@dimen/_10sdp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/_10sdp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_50sdp" android:src="@drawable/ic_counter_main" />
+                <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:text="@string/counter" android:maxLines="1" android:fontFamily="@font/inter_semi_bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:id="@id/llFirstContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_below="@id/tools" android:layout_marginHorizontal="@dimen/_12sdp" app:cardBackgroundColor="@color/all_card_bg_color" app:cardCornerRadius="@dimen/_10sdp">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/_10sdp" android:layout_marginVertical="@dimen/_10sdp">
+            <RelativeLayout android:id="@id/rlLanguage" android:padding="@dimen/_15sdp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/ivLanguage" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" app:srcCompat="@drawable/ic_language_sign" />
+                <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/language" android:layout_centerVertical="true" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/_10sdp" android:layout_toEndOf="@id/ivLanguage" />
+                <ImageView android:visibility="gone" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:src="@drawable/ic_arrow_left_to_right" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlPermission" android:padding="@dimen/_15sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:layout_gravity="center" android:id="@id/ivPermission" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" app:srcCompat="@drawable/ic_permission_troubleshooting" />
+                <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/permissions_troubleshooting" android:layout_centerVertical="true" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/_10sdp" android:layout_toEndOf="@id/ivPermission" />
+                <ImageView android:visibility="gone" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:src="@drawable/ic_arrow_left_to_right" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_below="@id/llFirstContainer" android:layout_marginHorizontal="@dimen/_12sdp" app:cardBackgroundColor="@color/all_card_bg_color" app:cardCornerRadius="@dimen/_10sdp">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/_10sdp" android:layout_marginVertical="@dimen/_10sdp">
+            <RelativeLayout android:id="@id/rlRateUs" android:padding="@dimen/_15sdp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/ivRateUs" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" app:srcCompat="@drawable/ic_rate_us" />
+                <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rate_us" android:layout_centerVertical="true" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/_10sdp" android:layout_toEndOf="@id/ivRateUs" />
+                <ImageView android:visibility="gone" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:src="@drawable/ic_arrow_left_to_right" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlShare" android:padding="@dimen/_15sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:layout_gravity="center" android:id="@id/ivShare" android:padding="@dimen/_1sdp" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" app:srcCompat="@drawable/ic_share_app" />
+                <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share" android:layout_centerVertical="true" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/_10sdp" android:layout_toEndOf="@id/ivShare" />
+                <ImageView android:visibility="gone" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:src="@drawable/ic_arrow_left_to_right" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rlPrivacy" android:padding="@dimen/_15sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:layout_gravity="center" android:id="@id/ivPrivacy" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" app:srcCompat="@drawable/ic_privacy_policy" />
+                <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_policy" android:layout_centerVertical="true" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/_10sdp" android:layout_toEndOf="@id/ivPrivacy" />
+                <ImageView android:visibility="gone" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:src="@drawable/ic_arrow_left_to_right" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

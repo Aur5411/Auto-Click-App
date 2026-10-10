@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main" android:background="@color/all_screen_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/llHeader" android:background="@color/all_screen_bg_color" android:layout_width="fill_parent" android:layout_height="@dimen/_45sdp" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/ivBack" android:padding="@dimen/_6sdp" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/ic_back" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_12sdp" />
+        <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_language" android:layout_centerInParent="true" android:textAllCaps="false" android:fontFamily="@font/inter_bold" />
+        <ImageView android:id="@id/tvSelectLanguage" android:padding="@dimen/_5sdp" android:visibility="invisible" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/ic_done" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_12sdp" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlLanguage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/rlAdsView" android:layout_below="@id/llHeader">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rvLanguageView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/_13sdp" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlAdsView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/fr_ads" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp">
+            <include android:id="@id/includeShimmer" layout="@layout/shimmer_native_ad_3" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

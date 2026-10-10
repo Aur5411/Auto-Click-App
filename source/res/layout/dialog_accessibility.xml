@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog_bg" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/_18ssp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="无障碍" />
+    <TextView android:textSize="@dimen/_14ssp" android:textColor="@android:color/darker_gray" android:gravity="center" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="需要必备权限" />
+    <TextView android:textSize="@dimen/_14ssp" android:textStyle="bold" android:textColor="@color/white" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="我们为什么需要这个权限？" />
+    <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="「无障碍服务可让应用代替您执行点击和滑动。这让处理重复任务变得更快、更高效」" />
+    <TextView android:textSize="@dimen/_14ssp" android:textStyle="bold" android:textColor="@color/white" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="开启引导" />
+    <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1. 点击「允许」按钮。\n2. 打开手机的「无障碍」设置。\n3. 找到「连点器」并开启该服务。" />
+    <TextView android:textSize="@dimen/_14ssp" android:textStyle="bold" android:textColor="@color/white" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="我们尊重您的隐私" />
+    <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="您的隐私是我们的首要任务。授予此权限时，不会收集、存储或分享任何个人数据" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/app_color_default" android:layout_gravity="center" android:id="@id/tvPrivacyPolicy" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="隐私政策" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/btnDoneSaveScript" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp" android:weightSum="2.0" android:layout_below="@id/clContainer">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btnCancel" android:background="@drawable/selector_cancel_btn" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="@dimen/_35sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_6sdp" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/_10sdp">
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不，拒绝" android:fontFamily="@font/inter_regular" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btnDone" android:background="@drawable/selector_done_btn" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="@dimen/_35sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是，接受" android:fontFamily="@font/inter_regular" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

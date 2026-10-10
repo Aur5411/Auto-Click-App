@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/all_card_bg_color" app:cardCornerRadius="@dimen/_10sdp" app:cardElevation="@dimen/_8sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_14sdp" android:layout_marginHorizontal="@dimen/_10sdp"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_20ssp" android:textStyle="bold" android:textColor="@color/red" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delete_" android:fontFamily="@font/inter_semi_bold" />
+        </RelativeLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_10sdp">
+            <TextView android:textSize="@dimen/_16ssp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/are_you_sure_want_to_delete_this_scripts" android:lineSpacingExtra="@dimen/_4sdp" android:fontFamily="@font/inter_regular" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_10sdp">
+            <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/_16ssp" android:textColor="@color/white" android:id="@id/btnCancel" android:background="@drawable/btn_done_round_corner" android:layout_width="0.0dip" android:layout_height="@dimen/_42sdp" android:layout_marginTop="@dimen/_14sdp" android:layout_marginBottom="@dimen/_14sdp" android:text="@string/cancel" android:layout_weight="1.0" android:textAllCaps="false" android:backgroundTint="@color/dialog_sub_card_color" android:layout_marginHorizontal="@dimen/_6sdp" />
+            <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/_16ssp" android:textColor="@color/white" android:id="@id/btnDelete" android:background="@drawable/btn_done_round_corner" android:layout_width="0.0dip" android:layout_height="@dimen/_42sdp" android:layout_marginTop="@dimen/_14sdp" android:layout_marginBottom="@dimen/_14sdp" android:text="@string/delete" android:layout_weight="1.0" android:textAllCaps="false" android:backgroundTint="#ffe62929" android:layout_marginHorizontal="@dimen/_6sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

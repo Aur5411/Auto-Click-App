@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/csv" android:clipChildren="false" android:layout_width="@dimen/point_view_size" android:layout_height="@dimen/point_view_size" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/viewPoint" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_clicker_actionpoint" android:contentDescription="Start" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="25.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/tvPointNum" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_4" android:layout_marginEnd="@dimen/dp_4" app:autoSizeMaxTextSize="25.0sp" app:autoSizeMinTextSize="10.0sp" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" app:layout_constrainedWidth="true" style="@style/textIghteous" />
+</FrameLayout>

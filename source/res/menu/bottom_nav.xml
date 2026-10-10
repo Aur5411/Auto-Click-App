@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_icon_btnbar_clicker" android:id="@id/clicker" android:title="连点" android:contentDescription="连点" />
+    <item android:icon="@drawable/ic_icon_btnbar_scripts" android:id="@id/script" android:title="脚本" android:contentDescription="脚本" />
+    <item android:icon="@drawable/ic_icon_btnbar_settings" android:id="@id/setting" android:title="设置" android:contentDescription="设置" />
+</menu>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_native" android:background="@drawable/bg_native_ads" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" app:shimmer_auto_start="true" app:shimmer_base_color="#ffcccccc"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="110.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/_10sdp">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="15.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/native_ad_title" android:background="@color/simmer_bg_color" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:layout_marginEnd="@dimen/_3sdp" android:layout_toStartOf="@id/ad" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="10.0dip" android:textColor="@color/white" android:id="@id/ad" android:layout_width="wrap_content" android:layout_height="15.0dip" android:text="@string/txt_ad" android:layout_centerVertical="true" android:layout_alignParentEnd="true" android:backgroundTint="@color/simmer_bg_color" android:paddingHorizontal="5.0dip" />
+                </RelativeLayout>
+                <View android:orientation="vertical" android:background="@color/simmer_bg_color" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_marginTop="8.0dip" />
+            </LinearLayout>
+            <View android:background="@color/simmer_bg_color" android:layout_width="200.0dip" android:layout_height="125.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="@dimen/_5sdp" android:layout_marginHorizontal="@dimen/_10sdp" />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton android:textSize="13.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:background="@color/simmer_bg_color" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/_4sdp" android:layout_marginBottom="@dimen/_8sdp" android:textAllCaps="true" android:layout_marginHorizontal="@dimen/_10sdp" />
+    </LinearLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

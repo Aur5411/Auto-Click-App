@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_6sdp" android:layout_marginHorizontal="@dimen/_8sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="@dimen/_66sdp" app:cardBackgroundColor="@color/all_card_bg_color" app:cardCornerRadius="@dimen/_10sdp" app:cardElevation="@dimen/_8sdp">
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toStartOf="@id/ivRunScript">
+                    <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:gravity="center|left" android:id="@id/tvScriptName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="脚本名称" android:fontFamily="@font/inter_medium" android:layout_marginStart="@dimen/_10sdp" />
+                    <TextView android:textSize="@dimen/_14ssp" android:textColor="#80ffffff" android:gravity="center|left" android:id="@id/tvScriptType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_6sdp" android:text="脚本名称" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/_10sdp" />
+                </LinearLayout>
+                <ImageView android:id="@id/ivRunScript" android:layout_width="@dimen/_26sdp" android:layout_height="@dimen/_26sdp" android:src="@drawable/ic_run_script" android:layout_centerInParent="true" android:layout_toStartOf="@id/ivMore" />
+                <ImageView android:id="@id/ivMore" android:padding="@dimen/_6sdp" android:layout_width="@dimen/_36sdp" android:layout_height="wrap_content" android:src="@drawable/ic_script_edit_menu" android:layout_centerInParent="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</FrameLayout>

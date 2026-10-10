@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_6sdp" android:layout_marginHorizontal="@dimen/_8sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="end|center|top" android:orientation="vertical" android:background="@drawable/ic_script_menu_bg" android:padding="@dimen/_8sdp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp" android:layout_marginEnd="@dimen/_30sdp" android:elevation="@dimen/_8sdp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/llRename" android:padding="@dimen/_8sdp" android:layout_width="wrap_content" android:layout_height="@dimen/_40sdp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_script_rename" />
+            <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rename" android:fontFamily="@font/inter_medium" android:layout_marginStart="@dimen/_10sdp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/llDuplicate" android:padding="@dimen/_8sdp" android:layout_width="wrap_content" android:layout_height="@dimen/_40sdp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_duplicate_script" />
+            <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/duplicate" android:fontFamily="@font/inter_medium" android:layout_marginStart="@dimen/_10sdp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/llDelete" android:padding="@dimen/_8sdp" android:layout_width="wrap_content" android:layout_height="@dimen/_40sdp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_script_delete" android:tint="@color/white" />
+            <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delete" android:fontFamily="@font/inter_medium" android:layout_marginStart="@dimen/_10sdp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/llExport" android:padding="@dimen/_8sdp" android:layout_width="wrap_content" android:layout_height="@dimen/_40sdp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_script_export" />
+            <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/export" android:fontFamily="@font/inter_medium" android:layout_marginStart="@dimen/_10sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/main" android:background="@color/all_screen_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/customToolbar" layout="@layout/custom_tool_bar_layout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/llTabButton" android:layout_width="fill_parent" android:layout_height="@dimen/_30sdp" android:layout_marginTop="@dimen/_6sdp" android:layout_below="@id/customToolbar" android:layout_marginHorizontal="@dimen/_12sdp">
+        <RelativeLayout android:textColor="@color/permission_text_color" android:id="@id/btnSingleClick" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/_6sdp">
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/_1_point_mode" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+            <View android:background="@drawable/tab_selector_btn_bg" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:textColor="@color/permission_text_color" android:id="@id/btnMultiClick" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/_6sdp">
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="多点模式" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+            <View android:background="@drawable/tab_selector_btn_bg" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/_4sdp" android:layout_weight="1.0" android:layout_above="@id/rlAdsView" android:layout_below="@id/llTabButton" />
+    <RelativeLayout android:id="@id/rlAdsView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/fr_ads" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp">
+            <include android:id="@id/includeShimmer" layout="@layout/shimmer_native_ad_3" />
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

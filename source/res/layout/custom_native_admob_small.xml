@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ad_app_icon" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="8.0dip" android:src="@color/colorPrimary" android:adjustViewBounds="true" android:layout_marginStart="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:layout_constraintEnd_toStartOf="@id/ad_call_to_action" app:layout_constraintStart_toEndOf="@id/ad_app_icon" app:layout_constraintTop_toTopOf="@id/ad_app_icon">
+            <TextView android:textSize="10.0dip" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/ad_headline" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="10.0dip" android:id="@id/ad_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/appbar_scrolling_view_behavior" android:maxLines="2" />
+        </LinearLayout>
+        <Button android:textSize="8.0dip" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ad_call_to_action" android:background="@drawable/ads_bg_lib" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="Cài Đặt" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/AppTheme.Ads" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.gms.ads.nativead.NativeAdView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dialog_bg" android:padding="@dimen/_8sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_12sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/_16ssp" android:textColor="@color/white" android:gravity="start" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/action_editor" android:singleLine="true" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/_10sdp" />
+    <LinearLayout android:orientation="vertical" android:id="@id/clToolKit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_below="@id/tvTitle" android:layout_marginHorizontal="@dimen/_10sdp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_add_action" />
+            <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_stop" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/_10sdp" />
+        </LinearLayout>
+        <View android:background="@color/white_10" android:layout_width="fill_parent" android:layout_height="@dimen/_1sdp" android:layout_marginVertical="@dimen/_8sdp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_replace_with_another_action" />
+            <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="替换为另一个动作" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/_10sdp" />
+        </LinearLayout>
+        <View android:background="@color/white_10" android:layout_width="fill_parent" android:layout_height="@dimen/_1sdp" android:layout_marginVertical="@dimen/_8sdp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_move_the_current_action" />
+            <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="移动当前动作" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/_10sdp" />
+        </LinearLayout>
+        <View android:background="@color/white_10" android:layout_width="fill_parent" android:layout_height="@dimen/_1sdp" android:layout_marginVertical="@dimen/_8sdp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_remove_the_current_action" />
+            <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除当前动作" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/_10sdp" />
+        </LinearLayout>
+        <View android:background="@color/white_10" android:layout_width="fill_parent" android:layout_height="@dimen/_1sdp" android:layout_marginVertical="@dimen/_8sdp" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_undo_the_last_edit" />
+            <TextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="撤销上一次编辑" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/_10sdp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_below="@id/clToolKit">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btnDone" android:background="@drawable/selector_done_btn" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="@dimen/_35sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/_10sdp">
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done" android:fontFamily="@font/inter_regular" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

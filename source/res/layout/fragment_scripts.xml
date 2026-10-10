@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvScriptData" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:id="@id/llImport" android:background="@drawable/btn_done_round_corner" android:layout_width="@dimen/_100sdp" android:layout_height="@dimen/_40sdp" android:layout_marginBottom="@dimen/_60sdp" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/_30sdp" android:layout_alignParentEnd="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_script_export" android:layout_marginEnd="@dimen/_10sdp" />
+        <TextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ivNOSavedScript" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="@dimen/_130sdp" android:layout_height="@dimen/_130sdp" android:src="@drawable/ic_no_saved_script" />
+        <TextView android:textSize="@dimen/_16ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/there_is_no_saved_script_here" />
+    </LinearLayout>
+</RelativeLayout>
