@@ -1571,7 +1571,6 @@
     <public type="color" name="colorWhite" id="0x7f06006c" />
     <public type="color" name="color_button_green" id="0x7f06006d" />
     <public type="color" name="color_native_ad_bg" id="0x7f06006e" />
-    <public type="color" name="color_text_update_content" id="0x7f06006f" />
     <public type="color" name="colorindicator" id="0x7f060070" />
     <public type="color" name="com_facebook_blue" id="0x7f060071" />
     <public type="color" name="com_facebook_button_background_color" id="0x7f060072" />
@@ -6520,7 +6519,6 @@
     <public type="string" name="stop_after" id="0x7f13019d" />
     <public type="string" name="submit" id="0x7f13019e" />
     <public type="string" name="tap_hold_duration" id="0x7f13019f" />
-    <public type="string" name="text_update_content" id="0x7f1301a0" />
     <public type="string" name="thank_you" id="0x7f1301a1" />
     <public type="string" name="the_best_we_can_get" id="0x7f1301a2" />
     <public type="string" name="theme" id="0x7f1301a3" />

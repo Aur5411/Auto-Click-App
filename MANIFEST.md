@@ -7,7 +7,7 @@
 
 ## 一、成品 APK
 
-`apk/连点器_汉化去广告_v6.apk` —— **18.8 MB**，共 **1287 个条目**，解压后合计 **27.0 MB**。
+`apk/连点器_汉化去广告_v12.apk` —— **18.8 MB**，共 **1287 个条目**，解压后合计 **27.0 MB**。
 
 | 类型 | 数量 | 解压后 | 压缩后 |
 |---|---:|---:|---:|
@@ -102,7 +102,7 @@
 du -sh source/ && find source/ -type f | wc -l
 
 # 查看 APK 内每个条目的压缩/解压体积
-unzip -v apk/连点器_汉化去广告_v6.apk
+unzip -v apk/连点器_汉化去广告_v12.apk
 
 # 实测回编译（本仓库已验证通过）
 java -jar apktool_2.9.3.jar b source -o rebuilt.apk

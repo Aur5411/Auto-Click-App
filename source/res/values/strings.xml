@@ -220,10 +220,10 @@
     <string name="gcm_defaultSenderId">487033186057</string>
     <string name="generate_random_slight_changes_in_time_interval_and_position_after_each_click_to_behave_more_like_a_human">每次点击后在时间间隔和位置上生成随机微小变化，让操作更像真人</string>
     <string name="get_started">开始</string>
-    <string name="google_api_key">AIzaSyB0GCu0E0MWM1PcUFoepo_Sr19Bc4CVEFU</string>
+    <string name="google_api_key">GOOGLE_API_KEY_REMOVED</string>
     <string name="google_app_id">1:487033186057:android:b4d3f59674f23a5ab7d5d8</string>
-    <string name="google_crash_reporting_api_key">AIzaSyB0GCu0E0MWM1PcUFoepo_Sr19Bc4CVEFU</string>
-    <string name="google_play_msg">"You don't have Google Play installed!"</string>
+    <string name="google_crash_reporting_api_key">GOOGLE_API_KEY_REMOVED</string>
+    <string name="google_play_msg">未安装 Google Play 服务！</string>
     <string name="google_storage_bucket">auto-click-pro-35b1e.firebasestorage.app</string>
     <string name="hash_symbol">\#</string>
     <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
@@ -421,7 +421,6 @@ We will share more once you're back online."</string>
     <string name="stop_after">停止于</string>
     <string name="submit">提交</string>
     <string name="tap_hold_duration">点击按住时长</string>
-    <string name="text_update_content">建议您更新到最新版本。我们修复了一些小错误，为您提供最佳体验。新的精彩功能正在开发中！</string>
     <string name="thank_you">谢谢</string>
     <string name="the_best_we_can_get">我们能做到的最好！</string>
     <string name="theme">主题</string>

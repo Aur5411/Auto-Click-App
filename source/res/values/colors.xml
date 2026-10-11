@@ -91,7 +91,6 @@
     <color name="colorWhite">#ffffffff</color>
     <color name="color_button_green">#ff39816b</color>
     <color name="color_native_ad_bg">#ff4d5876</color>
-    <color name="color_text_update_content">#ff434343</color>
     <color name="colorindicator">#ff068abf</color>
     <color name="com_facebook_blue">#ff1877f2</color>
     <color name="com_facebook_button_background_color">@color/com_facebook_blue</color>

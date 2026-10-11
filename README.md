@@ -12,8 +12,7 @@
 
 | 文件 | 大小 | 说明 |
 |---|---|---|
-| `apk/连点器_汉化去广告_v6.apk` | 19.7 MB | v6 成品（历史版本） |
-| `apk/连点器_汉化去广告_v11.apk` | 19.7 MB | **最新**：汉化补全 + 轻点点位进设置 |
+| `apk/连点器_汉化去广告_v12.apk` | 19.7 MB | **最新**：汉化补全 + 轻点点位进设置 + 安全修复 |
 
 - 应用名：**连点器**
 - 包名：`com.brainystudios.proautoclicker`
@@ -24,9 +23,11 @@
 SHA-256：
 
 ```
-v6  : 0c99349cf92961936e4799d7616043842152a9c8796462e06cc8dde05d5441b4
-v11 : d63bdabb73a4df566febadf6c9b8c0904a221a1807341eaa2c7e602ff9182f4e
+v12 : 5160c2127683eae762fbd0539587816386aabebce3e55db2aec39a2a540c5dfb
 ```
+
+> 历史版本（v6 / v8 / v9 / v10 / v11）已从仓库移除：v12 包含它们的全部改动，
+> 且旧包内含有 GitHub 安全告警指出的 Google API Key（见下文「安全修复」）。
 
 ---
 
@@ -100,8 +101,7 @@ v11 : d63bdabb73a4df566febadf6c9b8c0904a221a1807341eaa2c7e602ff9182f4e
 Auto-Click-App/
 ├── README.md
 ├── apk/
-│   ├── 连点器_汉化去广告_v6.apk        # 历史成品
-│   └── 连点器_汉化去广告_v11.apk       # 最新成品签名包
+│   └── 连点器_汉化去广告_v12.apk       # 最新成品签名包
 ├── source/                            # apktool 2.9.3 解包源码（可直接 apktool b 重打包）
 │   ├── AndroidManifest.xml
 │   ├── apktool.yml
@@ -157,6 +157,35 @@ java -jar uber-apk-signer.jar -a unsigned.apk --allowResign -o out/
 | v9 | 新增「轻点点位直接进入该点位设置」 |
 | v10 | 补齐单点链路单位下拉（毫秒/秒/分钟）+ 8 条残留 Toast |
 | v11 | 语言列表 22 项显示名、默认脚本名（含正则）、配置名前缀、明文拼接型 Toast 共 40 处 |
+| v12 | **安全修复**：移除泄露的 Google API Key；清理残留「更新」资源 |
+
+---
+
+## 安全修复（v12）
+
+GitHub 安全告警指出的 Google API Key 泄露：
+
+| 位置 | 处理 |
+|---|---|
+| `res/values/strings.xml` | `google_api_key` / `google_crash_reporting_api_key` 的真实 key 换成占位串 `GOOGLE_API_KEY_REMOVED` |
+| 旧成品包 | v6 / v11 等历史 APK 内 `resources.arsc` 同样含该 key，已从仓库移除 |
+
+**为什么不是直接删成空串**：Firebase 的 `FirebaseOptions.fromResource()` 按**资源名**
+（`getIdentifier`）读 `google_app_id` 与 `google_api_key`，任一为空就返回 null →
+`FirebaseApp.initializeApp()` 返回 null → 开屏页 `FirebaseRemoteConfig.getInstance()`
+抛 `IllegalStateException` → 应用起不来。所以保留非空占位串，Firebase 初始化照常，
+远程配置拉取会因鉴权失败走默认值（广告开关本来就已全部关闭），功能不受影响。
+
+> ⚠️ 该 Key 已公开暴露过，**占位串只是止损，真正要做的是去 Google Cloud Console 吊销它**
+> （https://console.cloud.google.com/apis/credentials）并重新生成。
+
+## 关于「检测更新」
+
+代码里**已经没有更新检测**：无 Play Core `appupdate` 库、无 `versionCode/versionName` 比较、
+无 `market://` 更新意图。v6 去更新时已清掉逻辑，只留下两条**无引用**的残留资源
+（`text_update_content` / `color_text_update_content`），v12 一并删除。
+`adsListener/RemoteConfigUtils` 的 30 个远程配置键经解码确认全部是广告位开关
+（`banner_*` / `native_*` / `inter_*`），且已全部置 `false`，与更新无关。
 
 ---
 
