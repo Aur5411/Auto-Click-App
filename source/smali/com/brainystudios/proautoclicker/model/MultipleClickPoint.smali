@@ -657,7 +657,7 @@
     :catch_0
     iget-object p1, p0, Lcom/brainystudios/proautoclicker/model/MultipleClickPoint;->context:Landroid/content/Context;
 
-    const-string v0, "Wfe05s1HaZc=\n"
+    const-string v0, "8SF+Zx6M4A6ef1UfT46F\n"
 
     const-string v1, "FJbMj6AyBLY=\n"
 

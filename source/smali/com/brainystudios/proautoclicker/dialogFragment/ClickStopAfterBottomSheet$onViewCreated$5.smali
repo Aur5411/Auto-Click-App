@@ -67,7 +67,7 @@
 
     move-result-object v0
 
-    const-string v1, "1kLJIVO1neToWskyALGd8eldxTRJptih6FvBIkWine7gDt4lULXJ6PJHwy5T\n"
+    const-string v1, "boEbqJ5DWAQjyAHjxkUJZxOeRcetNRkMYIINprVg\n"
 
     const-string v2, "hi6sQCDQvYE=\n"
 

@@ -74,7 +74,7 @@
 
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string v1, "Entered name: "
+    const-string v1, "输入的名称："
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -149,7 +149,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
-    const-string v0, "9bSpx9T8WyjTvqSI\n"
+    const-string v0, "TE9aTiJlzf4XP380RXGwphla\n"
 
     const-string v3, "pdvAqaDcKEk=\n"
 
@@ -202,7 +202,7 @@
     :goto_0
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    const-string p1, "AZsM9XpYXSoo2hb4aVldLSSIDOlrEg==\n"
+    const-string p1, "r37/f4OQmeHaH8gB+pjMtvNfhhmd\n"
 
     const-string v0, "R/plmR88fV4=\n"
 

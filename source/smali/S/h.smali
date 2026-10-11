@@ -96,7 +96,7 @@
 
     move-result-object p1
 
-    const-string v1, "A9wrwL2XWxs2lSnK6dNRBizGMw==\n"
+    const-string v1, "oyPAQSZF0MbIUOo9eG+c\n"
 
     const-string v2, "RbVHpZ3zNH4=\n"
 
@@ -135,7 +135,7 @@
 
     new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v4, "Failed to open file picker: "
+    const-string v4, "打开文件选择器失败："
 
     invoke-direct {v2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -613,7 +613,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "Duplicated as "
+    const-string v5, "已复制为 "
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -665,7 +665,7 @@
     :goto_3
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    const-string v0, "45YLdcZPZEDK1yZs00ctV8SDBw==\n"
+    const-string v0, "QFPv/CudoZAUH9a8\n"
 
     const-string v1, "pfdiGaMrRDQ=\n"
 

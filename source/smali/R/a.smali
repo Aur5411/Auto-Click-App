@@ -188,7 +188,7 @@
 
     move-result-object p1
 
-    const-string v0, "BNE1V/iUbwM6yTVEq5BvEDXROVKrhSYLMZ00Q/mQOw870w==\n"
+    const-string v0, "vBLn3jViquPxW8y/bWTHgc45tqE9GNrZ\n"
 
     const-string v2, "VL1QNovxT2Y=\n"
 

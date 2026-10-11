@@ -42,7 +42,7 @@
     :goto_0
     iget-object v0, v0, Lcom/brainystudios/proautoclicker/databinding/ActivityCounterBinding;->c:Landroid/widget/TextView;
 
-    const-string v2, "IlxCUDWgdNsUXl8Jfg==\n"
+    const-string v2, "hrKS1tk70RjA1r6DsTyt\n"
 
     const-string v3, "YTArM16AN7Q=\n"
 

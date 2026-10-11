@@ -133,7 +133,7 @@
 
     move-result v4
 
-    const-string v5, "Nn/crkgWUg==\n"
+    const-string v5, "gr0t\n"
 
     const-string v6, "ZRq/wSZyIfI=\n"
 
@@ -152,7 +152,7 @@
     goto :goto_1
 
     :cond_1
-    const-string v5, "HrP8D1/d4w==\n"
+    const-string v5, "tlIUk7kn\n"
 
     const-string v6, "U9qSeiu4kPk=\n"
 

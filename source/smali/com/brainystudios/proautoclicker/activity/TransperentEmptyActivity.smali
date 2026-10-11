@@ -275,7 +275,7 @@
 
     new-instance v7, Lkotlin/text/Regex;
 
-    const-string v8, "zO9hLyyZiSn1tmkgK8DJBa/8MhMh\n"
+    const-string v8, "Zx7Qm9VvCN0bcN3Qb8O8Paq/HVIlmI83\n"
 
     const-string v9, "gZZBfE/r4Fk=\n"
 
@@ -356,7 +356,7 @@
     :cond_6
     add-int/2addr v2, v1
 
-    const-string p1, "My Script "
+    const-string p1, "我的脚本 "
 
     invoke-static {v2, p1}, Lcom/facebook/h;->m(ILjava/lang/String;)Ljava/lang/String;
 
@@ -507,6 +507,30 @@
     invoke-direct {v0, p0}, Lcom/brainystudios/proautoclicker/activity/TransperentEmptyActivity$showMultiScriptSettingDialog$2;-><init>(Lcom/brainystudios/proautoclicker/activity/TransperentEmptyActivity;)V
 
     iput-object v0, p1, Lcom/brainystudios/proautoclicker/dialogFragment/PointMultiScriptSettingBottomSheet;->r0:Lkotlin/jvm/functions/Function0;
+
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    move-result-object v4
+
+    const-string v5, "ETo9IRczInYFMCw="
+
+    const-string v6, "QXV0b0Nsazg="
+
+    invoke-static {v5, v6}, Lcom/brainystudios/proautoclicker/StringFog;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    const/4 v6, -0x1
+
+    invoke-virtual {v4, v5, v6}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    move-result v4
+
+    if-ltz v4, :no_idx
+
+    iput v4, p1, Lcom/brainystudios/proautoclicker/dialogFragment/PointMultiScriptSettingBottomSheet;->w0:I
+
+    :no_idx
 
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentActivity;->r()Landroidx/fragment/app/FragmentManager;
 

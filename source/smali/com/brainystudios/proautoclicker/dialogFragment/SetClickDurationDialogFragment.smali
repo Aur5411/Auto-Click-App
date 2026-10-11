@@ -97,7 +97,7 @@
 
     iget-object v0, v0, Lcom/brainystudios/proautoclicker/databinding/DialogSetDurationBinding;->d:Landroid/widget/Spinner;
 
-    const-string v2, "MXDEClZg958Td8wV\n"
+    const-string v2, "mrYDgZiB\n"
 
     const-string v4, "fBmoZj8Tkvw=\n"
 
@@ -105,7 +105,7 @@
 
     move-result-object v2
 
-    const-string v4, "2x7GIFPdbA==\n"
+    const-string v4, "b9w3\n"
 
     const-string v5, "iHulTz25H3w=\n"
 
@@ -113,7 +113,7 @@
 
     move-result-object v4
 
-    const-string v5, "XZiVXjUXOg==\n"
+    const-string v5, "9Xl9wtPt\n"
 
     const-string v6, "EPH7K0FySdc=\n"
 

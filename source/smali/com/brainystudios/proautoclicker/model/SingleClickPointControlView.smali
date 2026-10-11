@@ -946,7 +946,7 @@
 
     move-result-object p0
 
-    const-string v1, "GHeL78tAsDd+a5asyEatMjdsgqzWR/8pLG2C/tparHkKaoD+2k+wK35rkavMCbE2KiKK/NpH\n"
+    const-string v1, "tq1AaTW2N9rj51kMWqZOveavCjAzz0XbuJ5PaQOpOc3g\n"
 
     const-string v2, "XgLljL8p31k=\n"
 

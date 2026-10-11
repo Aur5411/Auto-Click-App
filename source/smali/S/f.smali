@@ -187,7 +187,7 @@
     const/4 p1, 0x0
 
     :goto_2
-    const-string v0, "IIju3v/M/h0NhrrW4NKyFRiGp9Pu3v4RTpOhn+DM9xpOk6bar+nAOA==\n"
+    const-string v0, "iFVvWRM1d/vBAUcsagASnMFCJywxWhzRiX1KWjUodeDG\n"
 
     const-string v1, "bufOv4+8knQ=\n"
 

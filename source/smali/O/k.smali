@@ -119,7 +119,7 @@
 
     if-nez p1, :cond_0
 
-    const-string p1, "TT/43U1jTnF3MvzVUX4KN2096w==\n"
+    const-string p1, "7NUUWr2mzMeDtTUKx52Kt5HZ\n"
 
     const-string v1, "BFGOvCEKKlE=\n"
 
@@ -145,7 +145,7 @@
     invoke-virtual {p1}, Lcom/brainystudios/proautoclicker/service/WorkerService;->h()V
 
     :cond_1
-    const-string p1, "4+uhle5EvJXf6beZ+hDvjNPrto/tVumV3PE=\n"
+    const-string p1, "WAxJGgKceXMQYG5BeLgMHDoX\n"
 
     const-string v1, "sIjT/J4wnPk=\n"
 
@@ -164,7 +164,7 @@
     goto/16 :goto_3
 
     :catch_0
-    const-string p1, "ly9v1m638by+bmrVarfxu7I8b8p/\n"
+    const-string p1, "OcqcXJd/NEJxprsH7ndgIGXr\n"
 
     const-string v1, "0U4GugvT0cg=\n"
 
@@ -291,7 +291,7 @@
     invoke-virtual {v1, v2}, Lcom/brainystudios/proautoclicker/service/WorkerService;->g(Lcom/brainystudios/proautoclicker/config_multi/AppConfig;)V
 
     :cond_6
-    const-string v1, "uPOk5sWLZXuE8bLq0d82Yojzs/zGmTB7h+k=\n"
+    const-string v1, "AxRMaSlToJ1LeGsyU3fV8mEP\n"
 
     const-string v2, "65DWj7X/RRc=\n"
 
@@ -309,7 +309,7 @@
 
     :cond_7
     :goto_1
-    const-string v1, "wNaaJKo3Ad39mdw7sDALiefXmiemLAbZ+g==\n"
+    const-string v1, "Zj0gslnyixEjXyb+I9fRTAYJU8Bfue0Q\n"
 
     const-string v2, "jrm6VMVeb6k=\n"
 
@@ -339,7 +339,7 @@
 
     move-result-object p1
 
-    const-string v1, "qZeWd328N9qPmo9wYr95nJOLkHhm\n"
+    const-string v1, "GmVX/o1usX5mH2G19GvlH0B2\n"
 
     const-string v2, "/Pn9GRLLWfo=\n"
 
@@ -473,7 +473,7 @@
 
     if-nez p1, :cond_9
 
-    const-string p1, "yDJ5S6CgSwnyP31DvL0PT+gwag==\n"
+    const-string p1, "adiVzFBlyb8GuLScKl6PzxTU\n"
 
     const-string v4, "gVwPKszJLyk=\n"
 
@@ -499,7 +499,7 @@
     invoke-virtual {p1}, Lcom/brainystudios/proautoclicker/service/WorkerService;->h()V
 
     :cond_a
-    const-string p1, "xiRAzusb3kX6JlbC/0+NXPYkV9ToCYtF+T4=\n"
+    const-string p1, "fcOoQQfDG6M1r48afeduzB/Y\n"
 
     const-string v4, "lUcyp5tv/ik=\n"
 
@@ -518,7 +518,7 @@
     goto :goto_6
 
     :catch_3
-    const-string p1, "ksF+CrGA7/67gHsJtYDv+bfSfhag\n"
+    const-string p1, "PCSNgEhIKgB0SKrbMUB+YmAF\n"
 
     const-string v4, "1KAXZtTkz4o=\n"
 
@@ -580,7 +580,7 @@
     invoke-virtual {v3, v4}, Lcom/brainystudios/proautoclicker/service/WorkerService;->g(Lcom/brainystudios/proautoclicker/config_multi/AppConfig;)V
 
     :cond_d
-    const-string v3, "EemAW1mG3iwt65ZXTdKNNSHpl0FalIssLvM=\n"
+    const-string v3, "qg5o1LVeG8riYk+Pz3pupcgV\n"
 
     const-string v4, "QoryMiny/kA=\n"
 
@@ -598,7 +598,7 @@
 
     :cond_e
     :goto_5
-    const-string v3, "j7FYmO3m84Sy/h6H9+H50KiwWJvh/fSAtQ==\n"
+    const-string v3, "KVriDh4jeUhsOORCZAYjFUlukXwYaB9J\n"
 
     const-string v4, "wd546IKPnfA=\n"
 
@@ -617,7 +617,7 @@
     goto :goto_6
 
     :catch_4
-    const-string v3, "O1Y+80epT8gSFzvwQ6lPzx5FPu9W\n"
+    const-string v3, "lbPNeb5hijbd3+oix2neVMmS\n"
 
     const-string v4, "fTdXnyLNb7w=\n"
 
@@ -635,7 +635,7 @@
 
     new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v3, "Run script: "
+    const-string v3, "运行脚本："
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

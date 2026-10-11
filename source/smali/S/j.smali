@@ -112,7 +112,7 @@
 
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string v6, "Deleted: "
+    const-string v6, "已删除："
 
     invoke-direct {v0, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -172,7 +172,7 @@
     goto :goto_0
 
     :cond_1
-    const-string p1, "rHQoYfnPeIeJeChh6Q==\n"
+    const-string p1, "DZnk7RQOvWVZ+fCh\n"
 
     const-string v0, "6BFEBI2qWME=\n"
 

@@ -508,7 +508,7 @@
 
     move-result-object p0
 
-    const-string p1, "ypc7xh9UNYvtlinCU1Q/z+aB\n"
+    const-string p1, "a3PPQPGEth8hHPEylarxTRZx\n"
 
     const-string p2, "g/lNp3M9Uas=\n"
 
@@ -836,7 +836,7 @@
 
     invoke-static {p2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    const-string p2, "5xvia/Zq/ffOWupj9y659tEW4mTyerij0RXiaec=\n"
+    const-string p2, "R80w4hmuNAQsny+KeppHZCPDbqMi5mkm\n"
 
     const-string v0, "oXqLB5MO3YM=\n"
 
@@ -912,7 +912,7 @@
     goto :goto_1
 
     :cond_1
-    const-string p2, "HYAdM9r3hqo0wRU727PWsTKPAA==\n"
+    const-string p2, "vVbPujUzT0rBBvbmWjcXNu9E\n"
 
     const-string p3, "W+F0X7+Tpt4=\n"
 

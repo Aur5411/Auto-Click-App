@@ -69,7 +69,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "i2vIX/frrw==\n"
+    const-string v4, "IYEr3iMirw==\n"
 
     const-string v5, "yASmOZ6M8J8=\n"
 

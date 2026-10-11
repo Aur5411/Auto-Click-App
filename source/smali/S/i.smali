@@ -142,7 +142,7 @@
 
     if-eqz v5, :cond_0
 
-    const-string p1, "pjmw78wEeLuObb6m1Akxv8d3t+vFQTmglXy34tlBPbSOaqL1\n"
+    const-string p1, "Aq5kYw35vVBP/EYKRfHVKnGeMj0W\n"
 
     const-string v0, "5xnWhqBhWMw=\n"
 
@@ -157,7 +157,7 @@
 
     if-eqz v0, :cond_1
 
-    const-string v0, "Renamed to "
+    const-string v0, "已重命名为 "
 
     invoke-virtual {v0, v4}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
@@ -184,7 +184,7 @@
     goto :goto_0
 
     :cond_1
-    const-string p1, "+BFX9u5/YTHLHVXy5w==\n"
+    const-string p1, "Q/O0chKnpMcnkZ0ma67k\n"
 
     const-string v0, "qnQ5l4MaQVc=\n"
 
@@ -196,7 +196,7 @@
     goto :goto_1
 
     :cond_2
-    const-string v0, "52OOZaNeCPHZe4528FoI+tZijg==\n"
+    const-string v0, "X6Bc7G6ozRES6nuJN5yY\n"
 
     const-string v1, "tw/rBNA7KJQ=\n"
 

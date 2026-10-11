@@ -307,7 +307,7 @@
 
     move-result-object p1
 
-    const-string v0, "LTUIG0PkAfc3I1osRvUBthopWj5e5hajGzQ=\n"
+    const-string v0, "mMz3iKAmgWDMterCzw3M\n"
 
     const-string v2, "flB6bSqHZNc=\n"
 

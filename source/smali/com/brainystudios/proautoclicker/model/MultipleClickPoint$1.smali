@@ -43,7 +43,7 @@
 
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 4
+.locals 6
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -130,7 +130,77 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {}, Lcom/brainystudios/proautoclicker/view/MultipleClickPointControlView;->e()Ljava/util/ArrayList;
+
+    move-result-object v4
+
+    iget-object v5, p0, Lcom/brainystudios/proautoclicker/model/MultipleClickPoint$1;->this$0:Lcom/brainystudios/proautoclicker/model/MultipleClickPoint;
+
+    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
+
+    move-result v4
+
+    if-gez v4, :no_tap
+
+    new-instance v5, Landroid/content/Intent;
+
+    sget-object p1, Lcom/brainystudios/proautoclicker/view/MultipleClickPointControlView;->E:Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    const-class v2, Lcom/brainystudios/proautoclicker/activity/TransperentEmptyActivity;
+
+    invoke-direct {v5, p1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    const-string v2, "BTw1IwwrNGwYJTE="
+
+    const-string v3, "QXV0b0Nsazg="
+
+    invoke-static {v2, v3}, Lcom/brainystudios/proautoclicker/StringFog;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "LAAYGyozG1coGwAwMAkfTCgbEzAnBQpULhI="
+
+    const-string p1, "QXV0b0Nsazg="
+
+    invoke-static {v3, p1}, Lcom/brainystudios/proautoclicker/StringFog;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v5, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v5
+
+    const-string v2, "ETo9IRczInYFMCw="
+
+    const-string v3, "QXV0b0Nsazg="
+
+    invoke-static {v2, v3}, Lcom/brainystudios/proautoclicker/StringFog;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v5, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    move-result-object v5
+
+    const/high16 v2, 0x10000000
+
+    invoke-virtual {v5, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    move-result-object v5
+
+    sget-object v2, Lcom/brainystudios/proautoclicker/view/MultipleClickPointControlView;->E:Landroid/view/View;
+
+    invoke-virtual {v2}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v5}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    :no_tap
 
     goto/16 :goto_0
 

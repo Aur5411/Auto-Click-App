@@ -54,7 +54,7 @@
 
     move-result-object p1
 
-    const-string v0, "7pstaM/7OoH6k2h50/d0lPuFaG/V7GmU\n"
+    const-string v0, "dlj/7DkW/FclEsKpVQqABxxO\n"
 
     const-string v2, "nvdICbyeGuA=\n"
 

@@ -30,7 +30,7 @@
 
     const-string p1, "Invalid currentTabIndex: "
 
-    const-string v0, "Node "
+    const-string v0, "节点 "
 
     const-string v1, "Selected tab after removal: "
 
@@ -63,7 +63,7 @@
 
     move-result-object p1
 
-    const-string v0, "wJzpoDwI6c+uh6buIQnh0/iW\n"
+    const-string v0, "aEFoKM/laTMhFkFuuvUoWxR3IUTRiw4F\n"
 
     const-string v1, "jvPJzlNsjLw=\n"
 
@@ -85,7 +85,7 @@
 
     move-result-object p1
 
-    const-string v0, "DmIpAiB5dAxgeWZMPXh8EDZo\n"
+    const-string v0, "pr+oitOU9PDv6IHMpoS1mNqJ4ebN+pPG\n"
 
     const-string v1, "QA0JbE8dEX8=\n"
 
@@ -440,7 +440,7 @@
 
     invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string p1, " removed"
+    const-string p1, " 已删除"
 
     invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -462,7 +462,7 @@
 
     move-result-object v0
 
-    const-string v1, "qs35pr6YWGaXwu3noZRQI4DX6qM=\n"
+    const-string v1, "BQMIIH9P1cZqRQRuNGacoHYr\n"
 
     const-string v2, "46OPx9LxPEY=\n"
 
@@ -537,7 +537,7 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const-string v2, "Error removing node: "
+    const-string v2, "删除节点出错："
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -744,7 +744,7 @@
 
     move-result-object p1
 
-    const-string v0, "21EnOyET/DeucyIndWfRNudLYzdtLvc561s=\n"
+    const-string v0, "a4jxspPjfcYO2/ve5f8UtCOapceMoynO\n"
 
     const-string v1, "jj9DVAFHlFI=\n"
 
@@ -776,7 +776,7 @@
 
     move-result-object p1
 
-    const-string v0, "8tTalZ3Ti8332N6R3PGAgtTZz4vc8Y2Zyd7E2Z/ch47L1M4=\n"
+    const-string v0, "RQYYHHQ3CGACVRJDGitRCy0TT3NUVFNx\n"
 
     const-string v1, "oLGq+fyw7u0=\n"
 
@@ -803,7 +803,7 @@
 
     move-result-object p1
 
-    const-string v0, "6XusjcZaq1XWcbScxli9U817tMiFdbdEz3G+\n"
+    const-string v0, "QaNoAFmCO6IB831TA5N2wi68PlV6/3aGQahV\n"
 
     const-string v1, "pBTa6OYZ3ic=\n"
 
@@ -1121,7 +1121,7 @@
 
     move-result-object v4
 
-    const-string v5, "phpbwQSWnBCEHFzFUJeNQJsAXMdBgZoGnRlT3Q==\n"
+    const-string v5, "AP+9Q6ZLDMRlkLcSwnp5hWLq\n"
 
     const-string v6, "6HU/pCTy6WA=\n"
 
@@ -1176,7 +1176,7 @@
 
     move-result-object v1
 
-    const-string v4, "hcS/ZrWhFlmshbdutOVSWLPJv2mxsVNJ48u5brU=\n"
+    const-string v4, "JgFb71hz3qdBQlSzNWGHxXcA\n"
 
     const-string v5, "w6XWCtDFNi0=\n"
 
@@ -1233,7 +1233,7 @@
 
     move-result-object v1
 
-    const-string v2, "DvIVefOKn3c08hVz6Z6WPiP8QXI=\n"
+    const-string v2, "pi+U8QBnH9jveJGaeWZMsNoZ3Z0eCXju\n"
 
     const-string v4, "QJ01F5zu+lc=\n"
 
@@ -1264,7 +1264,7 @@
 
     new-instance v3, Ljava/lang/StringBuilder;
 
-    const-string v4, "Error duplicating node: "
+    const-string v4, "复制节点出错："
 
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -1305,7 +1305,7 @@
 
     move-result-object v0
 
-    const-string v2, "rOgwMvYmf3Wc9jY09HA6e4b0Ni/rcAlRjO1iM+tof1GH8zY05XA2Qoz+\n"
+    const-string v2, "AA7btSuzsIRzfMz6YKfp3nUwp9UZ+fizDBbU\n"
 
     const-string v3, "6ZpCXYQcXzg=\n"
 
@@ -1342,7 +1342,7 @@
 
     new-instance v3, Ljava/lang/StringBuilder;
 
-    const-string v4, "Invalid node settings: "
+    const-string v4, "节点设置无效："
 
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

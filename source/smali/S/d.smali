@@ -72,7 +72,7 @@
 
     move-result-object p1
 
-    const-string p2, "MmS/fc/H1ilWfLhvz47bIlZwuTzXy9g0AjH8LIuO1C4afaRv3s3WKRJi\n"
+    const-string p2, "kIZ79S4RUcDF9H2NXxYDZ0ch/TxdARKg0YM=\n"
 
     const-string v0, "dhHNHLuuuUc=\n"
 
@@ -132,7 +132,7 @@
 
     move-result-object p1
 
-    const-string p2, "wDpJVl7LbwDoNUNHVJh1B/MvQ1BImG8RoTBEWlnRZw7oI0NdSpYmMu08S0BImHED6C0KUg3VaQ/k\nN14d\n"
+    const-string p2, "Z86K2rck4cAMv7a+yDKnhCz6z6+FXY7/ZP6h1qEu6d4NsYWEyhCLhwHA\n"
 
     const-string v0, "gVkqMy24BmI=\n"
 
@@ -342,7 +342,7 @@
 
     move-result-object v6
 
-    const-string v7, "0Bh58R43\n"
+    const-string v7, "dvaBdM3T\n"
 
     const-string v8, "k3kXkntbIh4=\n"
 
@@ -376,7 +376,7 @@
 
     new-instance p2, Lcom/brainystudios/proautoclicker/config_multi/AppConfig;
 
-    const-string v7, "/2JxO4u9/rj4YHNJiab5sf8=\n"
+    const-string v7, "V7GW/nNIWXs8wJu1\n"
 
     const-string v8, "sScmG8jysP4=\n"
 
@@ -562,7 +562,7 @@
 
     move-result-object p1
 
-    const-string p2, "wNMK1KVIP9akyw3GpQEy3aTHDJW9RDHL8IZJheEBPdHoyhHGtEI/1uDV\n"
+    const-string p2, "YjHOXESeuD83Q8gkNZnqmLWWSJU3jvtfIzQ=\n"
 
     const-string v0, "hKZ4tdEhULg=\n"
 
@@ -623,7 +623,7 @@
 
     move-result-object p1
 
-    const-string p2, "LzeghSpvkNUHOKqUIDyK0hwiqoM8PJDETj2tiS11mNsHLqqOPjLZ5wIxopM8PI7WByDjgXlxltoL\nOrfO\n"
+    const-string p2, "iMNjCcOAHhXjsl9tvJZYUcP3Jnzx+XEqi/NIBdWKFgvivGxXvrR0Uu7N\n"
 
     const-string v0, "blTD4Fkc+bc=\n"
 
@@ -803,7 +803,7 @@
 
     move-result-object v6
 
-    const-string v7, "umQgGPX8\n"
+    const-string v7, "HIrYnSYY\n"
 
     const-string v8, "+QVOe5CQQN0=\n"
 
@@ -837,7 +837,7 @@
 
     new-instance v4, Lcom/brainystudios/proautoclicker/config_multi/AppConfig;
 
-    const-string v7, "3rKpsPlfhDvZsKvC+0SDMt4=\n"
+    const-string v7, "dmFOdQGqI/gdEEM+\n"
 
     const-string v8, "kPf+kLoQyn0=\n"
 
